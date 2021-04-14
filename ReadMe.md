@@ -18,4 +18,4 @@ python3 manage.py runserver
 
 ```
 ## Acknowledments
-The code was sourced from Digital Oceans Tech Talk by **Mason Egger**
+The code was sourced from DigitalOcean's Tech Talk by **Mason Egger**
