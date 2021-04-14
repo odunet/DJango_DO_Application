@@ -1,0 +1,25 @@
+#Starting new Application
+1) Start DJango app: django-admin startproject techtalk
+2) Run Application: python3 manage.py runserver
+3) Start a sample project call polls: python3 manage.py startapp polls
+4) Check migrations: python3 manage.py migrate
+5) Make migrations: python3 manage.py makemigrations
+6) Create newly migrated db: python3 manage.py sqlmigrate polls 0001
+7) Commit new migration to memory: python3 maanage.py migrate
+
+
+#Utility library
+1) Django time library: from django.utils import timezone
+    use: timezone.now()
+2) Sample use of django DB:
+    a) from polls.models import Choice, Questions
+    b) q = Questions(question_text="what is your favorite language?", pub_date=timezone.now())
+    c) vars(q)  #Check stored values
+    d) q.save()  #save new values
+    e) Questions.objects.all()  #Check objects in db
+
+#Starting the Django shell
+1) python3 manage.py shell
+
+#Create DJango admin
+1) python3 manage.py createsuperuser
